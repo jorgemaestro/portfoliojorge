@@ -1,0 +1,476 @@
+* {
+    box-sizing: border-box;
+}
+
+/* body {
+    height: 100%;
+    min-height: 100%;
+    color: #000;
+    background-color: #fff;
+    cursor: none;
+} */
+
+
+/* #invertedcursor {
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    background: rgb(255, 255, 255);
+    border-radius: 50%;
+    top: var(--y, -0);
+    left: var(--x, 0);
+    /* transform: translate(-50%, -50%); */
+/* z-index: 4;
+mix-blend-mode: difference;
+transition: transform .2s;
+} */
+
+@font-face {
+    src: url("../fonts/SF-Pro-Text-Medium.otf");
+    font-family: "sf-protext-medium";
+}
+
+@font-face {
+    src: url("../fonts/SF-Pro-Text-Light.otf");
+    font-family: "sf-protext-light";
+}
+
+@font-face {
+    src: url("../fonts/SF-Compact-Display-Light.ttf");
+    font-family: "sf-compact-light";
+}
+
+@font-face {
+    src: url("../fonts/BasisGrotesqueArabicPro-Light.ttf");
+    font-family: "grotesque-light";
+}
+
+@font-face {
+    src: url("../fonts/BasisGrotesqueArabicPro-Medium.ttf");
+    font-family: "grotesque-medium";
+}
+
+@font-face {
+    src: url("../fonts/BasisGrotesqueArabicPro-Regular.ttf");
+    font-family: "grotesque-regular";
+}
+
+@font-face {
+    src: url("../fonts/BasisGrotesqueArabicPro-Bold.ttf");
+    font-family: "grotesque-bold";
+}
+
+@font-face {
+    src: url("../fonts/BasisGrotesqueArabicPro-Black.ttf");
+    font-family: "grotesque-black";
+}
+
+
+
+#header {
+    z-index: 3;
+    width: 100%;
+    position: fixed;
+    padding: 40px 0px;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgb(255, 255, 255);
+    box-shadow: 0 1px 8px rgba(40, 40, 40, 0.1);
+    transition: top 0.3s;
+
+
+}
+
+
+
+.contleft {
+    padding: 0px 160px;
+
+}
+
+.myname {
+    /* position: fixed; */
+    display: flex;
+    flex-direction: column;
+}
+
+
+.name-surname {
+    font-family: "grotesque-regular";
+    color: black;
+    font-size: 28px;
+
+}
+
+.atributes {
+    font-family: "grotesque-light";
+    color: grey;
+    font-size: 18px;
+    width: 360px;
+    letter-spacing: 1px;
+    padding-top: 8px;
+    line-height: 18px;
+    letter-spacing: 3px;
+}
+
+.red {
+    font-family: "grotesque-light";
+    font-size: 18px;
+    width: 360px;
+    letter-spacing: 1px;
+    padding-top: 8px;
+    line-height: 18px;
+    letter-spacing: 0px;
+    color: rgb(254, 103, 134, 1);
+}
+
+.mode {
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+    width: 200px;
+    flex-wrap: wrap;
+    /* justify-content: end; */
+    /* column-gap: 12px; */
+}
+
+
+
+a {
+    text-decoration: none;
+}
+
+
+
+.menu {
+    margin-top: 0px;
+    display: flex;
+    flex-direction: row;
+    row-gap: 0px;
+    column-gap: 48px;
+    align-items: center;
+    padding: 0px 80px;
+
+}
+
+.container {
+    padding: 0px 80px;
+}
+
+.fontmenu {
+    font-family: "grotesque-light";
+    color: black;
+    font-size: 18px;
+    padding: 4px 0;
+    transition: all 0.15s ease-out;
+}
+
+.fontmenu:hover {
+    color: #FE6786;
+    letter-spacing: 1px;
+    cursor: pointer;
+
+}
+
+.tropical {
+    font-family: "grotesque-light";
+    color: black;
+    font-size: 18px;
+    transition: all 0.15s ease-out;
+
+}
+
+.tropical:hover {
+    color: #FE6786;
+    letter-spacing: 0.5px;
+}
+
+hr {
+    width: 100%;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.project-title {
+    font-family: "grotesque-light";
+    color: rgb(40, 40, 40);
+    font-size: 30px;
+    display: flex;
+    justify-content: right;
+}
+
+.titles {
+    /* background-color: aquamarine; */
+    font-family: "grotesque-black";
+    color: white;
+    font-size: 160px;
+    padding-top: 60px;
+    padding-bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+}
+
+.ux {
+    padding-top: 340px;
+}
+
+.ad {
+    padding-top: 120px;
+}
+
+
+.P01 {
+
+    -webkit-text-stroke: 1px black;
+    transition: all 0.3s ease-out;
+
+
+}
+
+.P01:hover {
+    cursor: pointer;
+    -webkit-text-stroke: 0px black;
+    color: rgb(55, 55, 55);
+
+}
+
+.P02 {
+    -webkit-text-stroke: 1px black;
+    transition: all 0.3s ease-out;
+}
+
+.P02:hover {
+    cursor: pointer;
+    -webkit-text-stroke: 0px black;
+    color: rgb(55, 55, 55);
+    letter-spacing: 0px;
+}
+
+.P03 {
+    -webkit-text-stroke: 1px black;
+    transition: all 0.3s ease-out;
+}
+
+.P03:hover {
+    cursor: pointer;
+    color: rgb(55, 55, 55);
+    -webkit-text-stroke: 0px black;
+    letter-spacing: 0px;
+}
+
+.P04 {
+    -webkit-text-stroke: 1px black;
+    transition: all 0.3s ease-out;
+}
+
+.P04:hover {
+    cursor: pointer;
+    color: rgb(55, 55, 55);
+    -webkit-text-stroke: 0px black;
+    letter-spacing: 0px;
+}
+
+.P05 {
+    -webkit-text-stroke: 1px black;
+    transition: all 0.3s ease-out;
+
+}
+
+.P05:hover {
+    cursor: pointer;
+    color: rgb(55, 55, 55);
+    -webkit-text-stroke: 0px black;
+    letter-spacing: 0px;
+
+}
+
+.P06 {
+    -webkit-text-stroke: 1px black;
+    transition: all 0.3s ease-out;
+
+}
+
+.P06:hover {
+    cursor: pointer;
+    -webkit-text-stroke: 0px black;
+    color: rgb(55, 55, 55);
+    letter-spacing: 0px;
+}
+
+.P07 {
+    -webkit-text-stroke: 1px black;
+    transition: all 0.3s ease-out;
+
+}
+
+.P07:hover {
+    cursor: pointer;
+    -webkit-text-stroke: 0px black;
+    color: rgb(55, 55, 55);
+    letter-spacing: 0px;
+}
+
+.P08 {
+    -webkit-text-stroke: 1px black;
+    transition: all 0.3s ease-out;
+
+}
+
+.P08:hover {
+    cursor: pointer;
+    -webkit-text-stroke: 0px black;
+    color: rgb(55, 55, 55);
+    letter-spacing: 0px;
+}
+
+.P09 {
+    -webkit-text-stroke: 1px black;
+    transition: all 0.3s ease-out;
+
+}
+
+.P09:hover {
+    cursor: pointer;
+    -webkit-text-stroke: 0px black;
+    color: rgb(55, 55, 55);
+    letter-spacing: 0px;
+}
+
+.titles a {
+    color: transparent;
+}
+
+.titles a:visited {
+    color: transparent;
+}
+
+.next {
+    font-family: "sf-protext-light";
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    padding-top: 0px;
+    transition: all 0.15s ease-out;
+}
+
+.next:hover {
+    color: #FE6786;
+    letter-spacing: 1px;
+}
+
+
+
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 160px;
+    padding-bottom: 80px;
+
+}
+
+
+.aboutme {
+    font-family: "grotesque-light";
+    color: rgb(69, 69, 69);
+    font-size: 30px;
+    padding-bottom: 36px;
+}
+
+.mystory {
+    font-family: "grotesque-light";
+    /* -webkit-text-stroke: 0px black; */
+    font-size: 28px;
+    line-height: 48px;
+    color: rgb(33, 33, 33);
+    width: 800px;
+    padding-top: 40px;
+    text-align: justify;
+
+}
+
+.basedin {
+    padding-top: 0px;
+    font-family: "grotesque-light";
+    font-size: 24px;
+    line-height: 36px;
+    color: rgb(120, 120, 120);
+    width: 480px;
+    text-align: center;
+}
+
+.strike {
+    text-decoration: line-through;
+}
+
+.italic {
+    font-style: italic;
+}
+
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 80px;
+
+    /* padding-bottom: 160px; */
+}
+
+.contactme {
+    padding-top: 0px;
+    font-family: "grotesque-medium";
+    font-size: 28px;
+    line-height: 48px;
+    color: rgb(31, 31, 31);
+    width: 600px;
+    text-align: center;
+}
+
+.icons {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 24px;
+    padding: 28px 0;
+}
+
+.mypicture {
+    background-color: #FE6786;
+
+}
+
+footer {
+    background-color: rgb(40, 40, 40);
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.mobile-content {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .mobile-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+
+    .desktop-content {
+        display: none;
+    }
+}

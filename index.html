@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="icon" type="image/x-icon" href="./imgs/favicon.ico">
+
+    <title>Jorge's Portfolio</title>
+    <script src="./main.js"></script>
+
+</head>
+
+
+<body>
+
+    <div id="invertedcursor"></div>
+    <main>
+
+        <div class="mobile-content">
+            <h1>This Site is Not Responsive</h1>
+            <h3>Please, Go to Desktop</h3>
+        </div>
+
+        <div class="desktop-content">
+            <header id="header">
+
+                <div class="myname container">
+                    <p class="name-surname">Jorge Maestro</p>
+                    <p class="atributes">Product Designer & Architect </p>
+                    <!-- <p class="atributes red">Final Version On Progress</p> -->
+                </div>
+
+                <div class="menu">
+                    <a class="fontmenu" onclick="scrollToSection(0)">Home</a>
+                    <a class="fontmenu" onclick="scrollToSection(0)">Ux/Ui</a>
+                    <a class="fontmenu" onclick="scrollToSection(1)">Design & Architecture</a>
+                    <!-- <a href="">
+                                               <p class=fontmenu>Box of Thoughts</p>
+                                           </a> -->
+                    <a class="fontmenu" onclick="scrollToSection(2)">About me</a>
+                    <!-- <div class="mode"> -->
+                    <!-- <p class="tropical">Summer Mode</p> -->
+                    <!-- <img src="../MY PORTFOLIO/imgs/TROPIC_LOGO-03.png" alt=""> -->
+
+                </div>
+            </header>
+        </div>
+
+
+        <section class="projects ux container">
+            <h2 class="project-title">UX/UI Projects</h2>
+
+
+            <!-- <hr> -->
+
+            <div class="titles">
+                <a target="_blank" href="fakulty.html">
+                    <h3 class="P01">Fakulty</h3>
+
+                </a>
+
+                <a target="_blank" data-aos="fade-up" href="barkonsult.html">
+                    <h3 class="P05">Barkonsult</h3>
+
+                </a>
+                <a target="_blank" data-aos="fade-up" href="storytel.html">
+                    <h3 class="P03">Storytel</h3>
+
+                </a>
+                <a target="_blank" data-aos="fade-up" href="the green broker.html">
+                    <h3 class="P02">Green Broker</h3>
+
+                </a>
+            </div>
+        </section>
+
+
+        <section class="projects ad container">
+            <h2 class="project-title" data-aos="fade-up">Design & Architecture</h2>
+            <div class="titles">
+                <a target="_blank" href="">
+                    <h3 class="P06" data-aos="fade-up">Vittoria Chess</h3>
+                </a>
+                <a target="_blank" href="sandhouse.html">
+                    <h3 class="P07" data-aos="fade-up">Sand House</h3>
+                </a>
+                <a target="_blank" href="jyvaskila.html">
+                    <h3 class="P09" data-aos="fade-up">B | Jyvaskyla</h3>
+                </a>
+                <!-- <h3 class="P08" data-aos="fade-up">Aalto Villa</h3> -->
+                <a target="_blank" href="concept-house.html">
+                    <h3 class="P08" data-aos="fade-up">Concept</h3>
+                </a>
+
+            </div>
+        </section>
+
+
+        <section class="about container" data-aos="fade-up">
+
+            <h2 class="aboutme">About Me</h2>
+            <p class="basedin">Currently based in <span class=strike>Warsaw</span>, <span class=strike>Doha</span>,
+                Madrid</p>
+            <p class="mystory">"During over 7 years of experience in Design and Architecture, I've provided creative
+                solutions to a wide variety of clients from all over the world; always putting their needs instinctively
+                as the greatest priority.
+            </p>
+            <p class="mystory">All the UX/UI methodologies and tools that I learnt during the last few months at
+                <span class="italic">Ironhack</span> gave me the confidence that I need to start taking part of
+                significant projects
+                where I have
+                the chance to learn and take the most from every person, project and situation."
+            </p>
+
+        </section>
+
+
+        <div class="contact">
+            <p class="contactme">You can contact me or drop me a line at:</p>
+            <div class="icons">
+                <a target="_blank" href="https://www.linkedin.com/in/jorge-maestro/"><img class=linkedin
+                        src="https://res.cloudinary.com/yuryur/image/upload/v1662653478/icons8-linkedin-01_l1jlgf.svg"
+                        alt="linkedin icono" width=40px height="30px"></a>
+                <a target="_blank" href=""><i class="material-icons" style="font-size:36px;color:rgb(40, 40, 40);"
+                        onclick="mailto()">mail</i></a>
+                <a target="_blank" href=""><i class="material-icons" style="font-size:36px;color:rgb(40, 40, 40);"
+                        onclick="callto()">call</i></a>
+            </div>
+        </div>
+
+
+        <footer>
+            <a href="fakulty.html">
+                <h3 class="next">Go to First UX Project ></h3>
+            </a>
+        </footer>
+
+    </main>
+    </div>
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init()</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>
